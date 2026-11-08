@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextChapter</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
@@ -14,20 +15,34 @@
     <!-- To be filled later -->
     <div class="showcase">
         <div class="location">
-            <h3 class="font">Destination A</h3>
-            <p class="font">Destination A is an ideal choice for your next big life move.</p>
-            <button class="buttondesign" onclick="toA()"></button>
+            <h3 class="font">New England (17c.)</h3>
+            <p class="font">New England (17c.) is an ideal choice for your next big life move.</p>
+            <button class="buttondesign" onclick="toA()">Go to page</button>
         </div>
         <div class="location">
             <h3 class="font">Destination B</h3>
             <p class="font">Destination B is an ideal choice for your next big life move.</p>
-            <button class="buttondesign" onclick=""></button>
+            <button class="buttondesign" onclick="toB()">Go to page</button>
         </div>
         <div class="location">
             <h3 class="font">Destination C</h3>
             <p class="font">Destination C is an ideal choice for your next big life move.</p>
-            <button class="buttondesign" onclick=""></button>
+            <button class="buttondesign" onclick="toC()">Go to page</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toA() {
+            window.location.href="newEngland.html";
+        }
+        //I'm not adding the links yet because I haven't decided on the page name yet
+        function toB() {
+            window.location.href="";
+        }
+        function toC() {
+            window.location.href="";
+        }
+    </script>
 </body>
 </html>
