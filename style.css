@@ -46,9 +46,15 @@ body {
 }
 
 #destination {
+    --one: #FFFCBA;
+    --two: #CCCA98;
+    if(ms < 20) {
+        color: var(one);
+    } else {
+        color: var(two);
+    }
     font-size: 100px;
     font-weight: 1000;
-    color: #FFFCBA;
     max-height: 50px;
     min-height: 50px;
 }
