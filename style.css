@@ -39,7 +39,8 @@ body {
 #headpage {
     font-size: 60px;
     font-weight: 600;
-    color: #484800;
+    --one: #CCCCCC;
+    --two: #AAAAAA;
     /* These are in place to ensure there's no big gap between #headpage and #destination */
     max-height: 0px;
     min-height: 0px;
@@ -47,12 +48,7 @@ body {
 
 #destination {
     --one: #FFFCBA;
-    --two: #CCCA98;
-    if(ms < 20) {
-        color: var(one);
-    } else {
-        color: var(two);
-    }
+    --two: #FFF888;
     font-size: 100px;
     font-weight: 1000;
     max-height: 50px;
@@ -82,9 +78,18 @@ body {
     max-width: auto;
     min-width: auto;
     flex-direction: column;
-    background: radial-gradient(#BBC060 0%, #DDE0A0 50%, #FFFFFF 100%);
     border-color: #FFFFFF;
     border-radius: 10px;
     height: auto;
     padding: 10px;
+    background: linear-gradient(60deg, #BBC060 0%, #DDE0A0 50%, #FFFFFF 100%);
+    /* This part AI enhanced */
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease-in-out infinite alternate;
 }
+
+@keyframes gradient-shift {
+    from { background-position: 0% 50%; }
+    to   { background-position: 100% 50%; }
+}
+/* End of AI enhanced code block */
