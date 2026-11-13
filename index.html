@@ -1,44 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextChapter</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-
-<header>
-    <h1 class="font" id="headpage">Come to</h1>
-    <h1 class="font" id="destination">New England</h1>
-</header>
-
 <body>
-    <p class="font" id="top"><br>A paradise for <strong>everyone...</strong></p>
-    <p class="font" id="top">... whether you are fishing, hunting, farming!</p>
-    <div class="panorama">
-        <div class="individualcards">
-            <h1 class="font">Fishers</h1>
-            <p class="font"><b>Fish are in great quality and quantity.</b></p>
-            <small class="font">Picture a dinner full of sturgeon, cod, mullets, eels, crabs, lobster, oyster, and salmon!</small>
-            <br>
-            <small class="font">You can catch hundreds in a day and make several shilling a day by selling the extra fish.</small>
-            <br>
-            <small class="font">As a cherry on top, you can also rest besides the pristine and clear waters of New England.</small>
+    <header>
+        <h1 class="font">Welcome to NextChapter!</h1>
+        <p class="font">We are here to help you plan your next big life move.</p>
+    </header>
+
+    <div class="showcase">
+        <div class="location">
+            <h3 class="font">New England (17c.)</h3>
+            <p class="font">New England (17c.) is an ideal choice for your next big life move.</p>
+            <button class="buttondesign" onclick="toA()">Go to page</button>
         </div>
-        <div class="individualcards">
-            <h1 class="font">Hunters</h1>
-            <p class="font"><b>Explore a world full of animals.</b></p>
-            <small class="font">Valuable beaver, otter, and fox fur are plentiful.</small>
-            <br>
-            <small class="font">You can catch hundreds in a day and make several shilling a day by selling the extra fish.</small>
-            <br>
-            <small class="font">Also, be delighted by the diverse wildlife! Eagles, ducks, and turkies are just some of the many animals you can find here.</small>
+        <div class="location">
+            <h3 class="font">Destination B</h3>
+            <p class="font">Destination B is an ideal choice for your next big life move.</p>
+            <button class="buttondesign" onclick="toB()">Go to page</button>
         </div>
-        <div class="individualcards">
-            <h1 class="font">Farmers</h1>
-            <p class="font"><b>Swaths of land are waiting for you.</b></p>
-            <small class="font">No more paying hefty rent to European landlords. New England is large and scarcity is scarce.</small>
-            <br>
-            <small class="font">Land is fertile and yields much more hemp, turnips, carrots, and cabbage than you'd normally expect.</small>
+        <div class="location">
+            <h3 class="font">Destination C</h3>
+            <p class="font">Destination C is an ideal choice for your next big life move.</p>
+            <button class="buttondesign" onclick="toC()">Go to page</button>
         </div>
     </div>
+
     <script src="script.js"></script>
+    <script>
+        function toA() {
+            window.location.href="newEngland.html";
+        }
+         //I'm not adding the links yet because I haven't decided on the page name yet
+        function toB() {
+            window.location.href="";
+        }
+        function toC() {
+            window.location.href="";
+        }
+    </script>
 </body>
+</html>
