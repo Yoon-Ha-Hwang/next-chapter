@@ -28,7 +28,7 @@
             <p class="font"><b>Explore a world full of animals.</b></p>
             <small class="font">Valuable beaver, otter, and fox fur are plentiful.</small>
             <br>
-            <small class="font">You can catch hundreds in a day and make several shilling a day by selling the extra fish.</small>
+            <small class="font">You can catch hundreds in a day and make a fortune every day by selling the extra fish.</small>
             <br>
             <small class="font">Also, be delighted by the diverse wildlife! Eagles, ducks, and turkies are just some of the many animals you can find here.</small>
         </div>
@@ -42,8 +42,25 @@
     </div>
     <script src="script.js"></script>
     <script>
-        function updateMessage() {
-            let flashingLight = document.getElementById("destination");
+        // AI assisted (completed independently)
+        function updateTime() {
+            let ms = new Date().getMilliseconds();
+
+            // Returned result will be 0 to 39
+            // i.e. the FPS is 40
+
+            let frame = Math.floor(ms / 25);
+            let headpage = document.querySelector("#headpage");
+            let destination = document.querySelector("#destination");
+    
+            if(frame < 20) {
+                headpage.style.color = "var(--one)";
+                destination.style.color = "var(--one)";
+            } else {
+                headpage.style.color = "var(--two)";
+                destination.style.color = "var(--two)";
+            }
         }
+        setInterval(updateTime, 25); 
     </script>
 </body>
