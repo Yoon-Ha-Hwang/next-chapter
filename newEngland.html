@@ -40,27 +40,14 @@
             <small class="font">Land is fertile and yields much more hemp, turnips, carrots, and cabbage than you'd normally expect.</small>
         </div>
     </div>
+    <br>
+    <button id="back" onclick="back()"></button>
+
     <script src="script.js"></script>
-    <script>
-        // AI assisted (completed independently)
-        function updateTime() {
-            let ms = new Date().getMilliseconds();
-
-            // Returned result will be 0 to 39
-            // i.e. the FPS is 40
-
-            let frame = Math.floor(ms / 25);
-            let headpage = document.querySelector("#headpage");
-            let destination = document.querySelector("#destination");
-    
-            if(frame < 20) {
-                headpage.style.color = "var(--one)";
-                destination.style.color = "var(--one)";
-            } else {
-                headpage.style.color = "var(--two)";
-                destination.style.color = "var(--two)";
-            }
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(30deg, #BBC060 30%, #DDE0A0 60%, #FFFFFF 100%);
         }
-        setInterval(updateTime, 25); 
-    </script>
+    </style>
 </body>
